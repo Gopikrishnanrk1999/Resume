@@ -1,0 +1,95 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 20px 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.logo span {
+  color: var(--accent-strong);
+}
+
+.links {
+  display: flex;
+  gap: 4px;
+}
+
+.links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cta {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--on-accent);
+  background: var(--accent);
+  padding: 9px 18px;
+  border-radius: 999px;
+}
+
+.themeToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.themeToggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--surface-hover);
+}
+
+.themeToggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 640px) {
+  .links {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+  text-align: center;
+  padding-bottom: var(--section-gap);
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  background: linear-gradient(120deg, var(--text), var(--accent-strong));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
